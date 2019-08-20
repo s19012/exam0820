@@ -15,14 +15,16 @@ def omikuji():
 # おみくじ画面
 root = Tk()
 root.title('おみくじ')
+root.configure(bg='#afeeee')
 
-label1 = Label(text='下のボタンを押してください')
+label1 = Label(text='下のボタンを押してください', bg='#afeeee')
 label1.pack()
 
 # おみくじボタン
 omikuji_button = Button(
     text='おみくじ',
     width=10, height=5,
+    bg='#ee82ee',
     command=omikuji
 )
 omikuji_button.pack()
